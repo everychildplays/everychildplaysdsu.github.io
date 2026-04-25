@@ -4,9 +4,9 @@ body {
 }
 
 a, .btn, .btn-link, .card-title, .card-text, h2, h3, h5, p {
-    color: #FFFF00 !important;
-    font-weight: bold;
-    font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+  color: #FFFF00 !important;
+  font-weight: bold !important;
+  font-family: "Comic Sans MS" !important;
 }
 /* Tabs checked-state & panel visibility */
 #t-tab1:checked ~ .t-tab-list label[for="t-tab1"],
