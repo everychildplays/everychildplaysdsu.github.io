@@ -6,7 +6,7 @@ body {
 a, .btn, .btn-link, .card-title, .card-text, h2, h3, h5, p {
   color: #FFFF00 !important;
   font-weight: bold !important;
-  font-family: "Comic Sans MS","Comic Sans","Lobster", "Pacifico", cursive !important;
+  font-family: "Comic Sans MS", "Lobster", "Pacifico", "Chalkboard SE", "Marker Felt", cursive !important;
 }
 /* Tabs checked-state & panel visibility */
 #t-tab1:checked ~ .t-tab-list label[for="t-tab1"],
