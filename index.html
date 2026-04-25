@@ -5,13 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Team</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="py-4 text-center">
-        <img src="assets/ECP-Animated-Final.gif" alt="Company Logo" class="logo img-fluid" style="max-height: 100px;">
-    </header>
+<header class="site-header">
+  <img src="assets/ECP-Animated-Final.gif" alt="Company Logo" class="logo img-fluid">
+  <div class="top-tabs" aria-label="Top right tabs">
+    <!-- radios (hidden) -->
+    <input type="radio" name="top-tabs" id="t-tab1" checked style="display:none;">
+    <input type="radio" name="top-tabs" id="t-tab2" style="display:none;">
+    <input type="radio" name="top-tabs" id="t-tab3" style="display:none;">
+
+    <!-- tab headers -->
+    <div class="t-tab-list" role="tablist" style="display:flex; gap:6px; justify-content:flex-end;">
+      <label for="t-tab1" role="tab" tabindex="0" aria-controls="t-panel1"
+             style="padding:8px 12px; border-radius:8px 8px 0 0; background:#f1f5f9; cursor:pointer; font-weight:600; color:#334155; box-shadow:0 1px 0 rgba(0,0,0,.02);">
+        Contact
+      </label>
+      <label for="t-tab2" role="tab" tabindex="0" aria-controls="t-panel2"
+             style="padding:8px 12px; border-radius:8px 8px 0 0; background:#f1f5f9; cursor:pointer; font-weight:600; color:#334155;">
+        Join
+      </label>
+      <label for="t-tab3" role="tab" tabindex="0" aria-controls="t-panel3"
+             style="padding:8px 12px; border-radius:8px 8px 0 0; background:#f1f5f9; cursor:pointer; font-weight:600; color:#334155;">
+        Donate
+      </label>
+    </div>
+
+    <!-- panels (absolutely positioned below the tabs) -->
+    <div class="t-panels" style="position:relative;">
+      <div id="t-panel1" class="t-panel contact" role="tabpanel" aria-labelledby="t-tab1"
+           style="display:none; position:absolute; right:0; top:8px; width:420px; max-width:80vw; border-radius:8px; box-shadow:0 8px 24px rgba(2,6,23,.12); padding:16px; z-index:60;">
+        <h4 style="margin:0 0 8px 0;">Contact</h4>
+        <p style="margin:6px 0;"><strong>Instagram:</strong> <span style="color:#0b84ff; font-weight:700;">@everyplayerplaysdsu</span></p>
+        <p style="margin:6px 0;"><strong>Email:</strong> <a href="mailto:everyplayerplaysdsu@gmail.com" style="color:#0b84ff;">everyplayerplaysdsu@gmail.com</a></p>
+      </div>
+
+      <div id="t-panel2" class="t-panel join" role="tabpanel" aria-labelledby="t-tab2"
+           style="display:none; position:absolute; right:0; top:8px; width:420px; max-width:80vw; border-radius:8px; box-shadow:0 8px 24px rgba(2,6,23,.12); padding:16px; z-index:60;">
+        <h4 style="margin:0 0 8px 0;">Join Us</h4>
+        <p style="margin:6px 0;">SDSU EveryChildPlays Coaches Interest Form:</p>
+        <p style="margin:6px 0;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdVhNEag3vvlGP4Imuvf6ojkpoTAXU24Ackc_Vxk1jZd6vPhg/viewform" target="_blank" rel="noopener" style="color:#0b84ff;">Open the Google Form</a></p>
+      </div>
+
+      <div id="t-panel3" class="t-panel donate" role="tabpanel" aria-labelledby="t-tab3"
+           style="display:none; position:absolute; right:0; top:8px; width:420px; max-width:80vw; height:420px; overflow:auto; border-radius:8px; box-shadow:0 8px 24px rgba(2,6,23,.12); padding:16px; z-index:60;">
+        <h4 style="margin:0 0 8px 0;">Donate below</h4>
+        <!-- long content area: scrollable -->
+        <div style="color:#93baf0; line-height:1.5;">
+          <p><strong>Dear Parents, Coaches, Families, and Friends of our Autism Sports Community,</strong></p>
+          <p>We are thrilled to announce our plan to establish The Autism Sports Foundation as an official non-profit charity!</p>
+          <p>This journey started back in 2016, exploring the impact of structured team sports. Even then, we saw the potential for developing crucial skills like collaboration, communication, focus, and social thinking, alongside physical fitness gains.</p>
+          <p>Building on that foundation, our current program has blossomed. Week after week, we see the incredible power of this community in action:</p>
+          <ul style="margin: 12px 0; padding-left: 20px;">
+            <li><strong>Genuine Friendships:</strong> Children are connecting, interacting, and forming real bonds.</li>
+            <li><strong>Social &amp; Communication Growth:</strong> Children are improving their ability to communicate improving eye contact, encourage teammates, and navigate social interactions.</li>
+            <li><strong>Skill Development:</strong> Participants are enhancing physical fitness, balance, coordination, and sport-specific skills.</li>
+            <li><strong>Parent Camaraderie:</strong> Many of you share how vital it is to connect with other parents who understand, leading to mutual support, friendships, and even playdates outside of practice!</li>
+            <li><strong>Coach Development:</strong> Our volunteers gain valuable leadership experience and skills.</li>
+          </ul>
+          <p>Pure Fun & Joy: Above all, the smiles, laughter, and enthusiasm show that the kids are having a fantastic time while learning and growing.</p>
+            <p>The clear success we're witnessing – this thriving community, the developing skills, the supportive network – convinces us that now is the time to build a lasting foundation.</p>
+            <p>Our mission will be to harness the power of team sports to support the development, well-being, and social integration of neurodiverse children, while also providing resources and community for their families and coaches. We aim to create accessible, effective, and joyful sports programs guided by best practices.</p>
+            <p>Here's Where We Need Your Help: The Founding Drive</p>
+            <p>To make this vision a sustainable reality, we must formally establish the Autism Sports Foundation as a 501(c)(3) non-profit. This legal status is essential – it allows us to operate officially and, critically, to apply for grants and accept tax-deductible donations from the wider community, businesses, and foundations in the future.</p>
+            <p>Our immediate goal is to raise funds for the legal and administrative costs of the 501(c)(3) filing. We are launching an initial Founding Drive to cover these essential setup expenses.</p>
+            <p>We appeal to you, our core community who sees the value of this program firsthand, to consider making a contribution. Any amount you can offer will directly support building the legal foundation for everything we hope to achieve. Your early support is crucial to getting us off the ground.</p>
+            <p>This is an exciting moment for our community. Together, we can build something special and lasting – an organization dedicated to helping neurodiverse children and strengthening families through the positive effect of team sports on development and communication skills.. Thank you for being part of this journey and for considering how you can help us take this vital next step.</p>
+            <p>With heartfelt appreciation and anticipation,</p>
+            <p>  - The Autism Sports Foundation Steering Committee</p>
+          <p style="margin-top:12px;">
+  <strong>Link to gofundme:</strong>
+  <a href="https://www.gofundme.com/f/support-the-autism-sports-foundations-launch?attribution_id=sl:cdcc2e25-689a-47cd-a8a3-e5afbec92ed4&lang=en_US&utm_campaign=man_ss_icons&utm_medium=customer&utm_source=copy_link"
+     target="_blank" rel="noopener" style="color:#0b84ff;">
+    Link to donation
+  </a>
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
     <section class="mission container my-5 text-center">
         <h2 class="mb-3">Our Mission</h2>
@@ -23,14 +97,14 @@
         <a href="#learn-more" class="btn btn-link mb-2">Learn More</a>
         <button class="btn btn-primary">Join Us</button>
     </section>
-
+                
     <section class="team-introduction container my-5">
         <h2 class="mb-4 text-center">Meet Our Team</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
             <!-- Repeat this block for each team member -->
             <div class="col">
                 <div class="card h-100 text-center">
-                    <img src="team/paris.jpg" class="card-img-top" alt="Team Member 1">
+                    <img src="team/paris.jpg" class="card-img-top" alt="Paris Ramirez, President">
                     <div class="card-body">
                         <h5 class="card-title">Paris Ramirez</h5>
                         <p class="card-text">President.</p>
@@ -40,7 +114,7 @@
             <!-- Add more team members here -->
             <div class="col">
                 <div class="card h-100 text-center">
-                    <img src="team/AnaRod.png" class="card-img-top" alt="Team Member 1">
+                    <img src="team/AnaRod.png" class="card-img-top" alt="Ana Rodriguez, External Vice President">
                     <div class="card-body">
                         <h5 class="card-title">Ana Rodriguez</h5>
                         <p class="card-text">External Vice President.</p>
@@ -49,7 +123,7 @@
             </div>             
             <div class="col">
                 <div class="card h-100 text-center">
-                    <img src="team/Daniela.png" class="card-img-top" alt="Team Member 1">
+                    <img src="team/Daniela.png" class="card-img-top" alt="Daniela Cazares, Internal Vice President">
                     <div class="card-body">
                         <h5 class="card-title">Daniela Cazares</h5>
                         <p class="card-text">Internal Vice President.</p>
@@ -58,7 +132,7 @@
             </div>             
             <div class="col">
                 <div class="card h-100 text-center">
-                    <img src="team/SarahV.png" class="card-img-top" alt="Team Member 1">
+                    <img src="team/SarahV.png" class="card-img-top" alt="Sarah Valenzuela, Treasurer">
                     <div class="card-body">
                         <h5 class="card-title">Sarah Valenzuela</h5>
                         <p class="card-text">Treasurer.</p>
@@ -67,7 +141,7 @@
             </div>
             <div class="col">
                 <div class="card h-100 text-center">
-                    <img src="team/Aileen.png" class="card-img-top" alt="Team Member 1">
+                    <img src="team/Aileen.png" class="card-img-top" alt="Aileen Choe, Secretary">
                     <div class="card-body">
                         <h5 class="card-title">Aileen Choe</h5>
                         <p class="card-text">Secretary.</p>
@@ -76,7 +150,7 @@
             </div>
             <div class="col">
                 <div class="card h-100 text-center">
-                    <img src="team/Priscilla.png" class="card-img-top" alt="Team Member 1">
+                    <img src="team/Priscilla.png" class="card-img-top" alt="Priscilla Gonzalez, Public Relations">
                     <div class="card-body">
                         <h5 class="card-title">Priscilla Gonzalez</h5>
                         <p class="card-text">Public Relations.</p>
@@ -85,7 +159,7 @@
             </div>
             <div class="col">
                 <div class="card h-100 text-center">
-                    <img src="team/Celine.png" class="card-img-top" alt="Team Member 1">
+                    <img src="team/Celine.png" class="card-img-top" alt="Celine Thomassian, CSSC Representative">
                     <div class="card-body">
                         <h5 class="card-title">Celine Thomassian</h5>
                         <p class="card-text">CSSC Representative.</p>
@@ -94,7 +168,7 @@
             </div>
             <div class="col">
                 <div class="card h-100 text-center">
-                    <img src="team/Jessica.png" class="card-img-top" alt="Team Member 1">
+                    <img src="team/Jessica.png" class="card-img-top" alt="Jessica Hoehn, Behavioral Support Chair">
                     <div class="card-body">
                         <h5 class="card-title">Jessica Hoehn</h5>
                         <p class="card-text">Behavioral Support Chair.</p>
@@ -103,13 +177,14 @@
             </div>                                        
             <div class="col">
                 <div class="card h-100 text-center">
-                    <img src="team/Sahira.png" class="card-img-top" alt="Team Member 1">
+                    <img src="team/Sahira.png" class="card-img-top" alt="Sahira Garcia, Behavioral Support Chair">
                     <div class="card-body">
                         <h5 class="card-title">Sahira Garcia</h5>
                         <p class="card-text">Behavioral Support Chair.</p>
                     </div>
                 </div>
-            </div>    
+            </div>
+        </div>
     </section>
 
     <section class="large-team-image container my-5 text-center">
@@ -122,5 +197,29 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/main.js"></script>
+    <!-- Add this new script right after main.js -->
+    <script>
+// Tab toggle functionality - gracefully degrades if this doesn't run
+document.querySelectorAll('.t-tab-list label[role="tab"]').forEach(label => {
+  label.addEventListener('click', function(e) {
+    const radioInput = document.getElementById(this.getAttribute('for'));
+    if (radioInput && radioInput.checked) {
+      e.preventDefault();
+      radioInput.checked = false;
+    }
+  });
+});
+
+// Close panels when clicking outside
+document.addEventListener('click', function(e) {
+  const tabs = document.querySelector('.top-tabs');
+  if (tabs && !tabs.contains(e.target)) {
+    // Click is outside tabs area, close all panels
+    document.querySelectorAll('input[name="top-tabs"]').forEach(radio => {
+      radio.checked = false;
+    });
+  }
+});
+</script>
 </body>
 </html>
